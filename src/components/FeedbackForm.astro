@@ -10,6 +10,7 @@
   <form
     data-netlify="true"
     netlify-honeypot
+    data-netlify-recaptcha="true"
     name="feedback"
     method="POST"
     action="/success"
@@ -26,6 +27,9 @@
     <input id="email" type="email" name="email" required />
     <label for="feedback">What is your feedback?</label>
     <textarea id="feedback" wrap="soft" name="feedback" required></textarea>
+
+    <div data-netlify-recaptcha="true"></div>
+
     <button type="submit">Submit</button>
   </form>
 </div>
